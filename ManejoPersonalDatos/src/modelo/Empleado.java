@@ -1,13 +1,17 @@
 package modelo;
 
+import java.io.Serializable;
 import java.util.Date;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Clase para representar los datos de la 
  * tabla en la programación 
  * @author luiscobian
  */
-public class Empleado {
+@XmlRootElement
+public class Empleado implements 
+        Serializable {
     private int idEmpleado; 
     private String nombre; 
     private String puesto; 
